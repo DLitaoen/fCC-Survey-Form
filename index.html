@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newcomer Survey Form</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <h1 id="title" class="title">Newcomer Survey Form</h1>
+    <hr>
+    <h2 id="tagline" class="tagline">Welcome to Church!</h3>
+    <p id="description" class="description">We encourage you to fill up this survey in order for us to be able to connect with you better. Rest assured, we do not share your information to others without your permission.</p>
+    <hr>
+    <form action="" id="survey-form">
+        <h3 class="section-header">Basic Information</h3>
+        <div class="basic-information">
+            <div class="form-group">
+                <label for="" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-line" placeholder=" Juan dela Cruz" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-line" placeholder=" sample@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="" id="phone-label">Phone Number</label>
+                <input type="tel" name="phone" id="phone" class="form-line" placeholder=" 09876543210" pattern="[0][9][0-9]{9}">
+            </div>
+            <div class="form-group">
+                <label for="" id="number-label">Age (optional)</label>
+                <input type="number" name="number" id="number" class="form-line" min="0" max="120" placeholder=" 18">
+            </div>
+        </div>
+        <h3 class="section-header">Section Header</h3>
+        <div class="dropdown-question">
+            <select name="" id="dropdown">
+                <option value="">Dropdown Option 1</option>
+                <option value="">Dropdown Option 2</option>
+            </select>
+        </div>
+        <h3 class="section-header">Section Header</h3>
+        <div class="radio-question">
+            <label for=""><input type="radio" name="radio" value=""> Radio Option 1</label>
+            <label for=""><input type="radio" name="radio" value=""> Radio Option 2</label>
+        </div>
+        <h3 class="section-header">Section Header</h3>
+        <div class="checkbox-question">
+            <label for=""><input type="checkbox" value=""> Checkbox Option 1</label>
+            <label for=""><input type="checkbox" value=""> Checkbox Option 2</label>
+        </div>
+        <h3 class="section-header">Section Header</h3>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
