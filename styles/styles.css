@@ -68,11 +68,13 @@ label {
 
 .basic-information {
     padding: 0 15px;
+    padding-bottom: 20px;
 }
 
 .basic-information label {
     display: block;
     padding: 15px;
+    padding-bottom: 25px;
 }
 
 button {
