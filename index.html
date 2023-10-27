@@ -16,7 +16,7 @@
     <p id="description" class="description">We encourage you to fill up this survey in order for us to be able to connect with you better. Rest assured, we do not share your information to others without your permission.</p>
     <hr>
     <form action="" id="survey-form">
-        <h3 class="section-header" id="basic-info">Basic Information</h3>
+        <h3 class="section-header" id="basic-information-section">Basic Information</h3>
         <div class="basic-information">
             <div class="form-group">
                 <label for="" id="name-label">Name</label>
@@ -34,27 +34,39 @@
                 <label for="" id="number-label">Age (optional)</label>
                 <input type="number" name="number" id="number" class="form-line" min="0" max="120" placeholder=" 18">
             </div>
+            <div class="dropdown-question">
+                <label for="" id="newsletter-label">Marital Status 
+                    <select name="" id="dropdown">
+                        <option value="">Select an option</option>
+                        <option value="1">Single</option>
+                        <option value="2">Married</option>
+                        <option value="3">Divorced</option>
+                        <option value="4">Widowed</option>
+                        <option value="0">Prefer not to answer</option>
+                    </select>
+                </label>
+            </div>
         </div>
-        <h3 class="section-header" id="section-header-2">Section Header</h3>
-        <div class="dropdown-question">
-            <label for="" id="name-label">Name</label>
-            <select name="" id="dropdown">
-                <option value="">Dropdown Option 1</option>
-                <option value="">Dropdown Option 2</option>
-            </select>
+        <h3 class="section-header" id="newsletter-section">Newsletter</h3>
+        <div class="newsletter">
+            <div class="radio-question">
+                <label for="" id="radio-label">Would you like to receive weekly e-news?</label>
+                <label for=""><input type="radio" name="radio" value="1"> Yes</label>
+                <label for=""><input type="radio" name="radio" value="0"> No</label>
+            </div>
+            <br>
+            <div class="checkbox-question">
+                <label for="" id="checkbox-label">If yes, please tick your areas of interest:</label>
+                <label for=""><input type="checkbox" value="1"> Mission News</label>
+                <label for=""><input type="checkbox" value="2"> Vision and Values</label>
+                <label for=""><input type="checkbox" value="3"> Small Groups</label>
+                <label for=""><input type="checkbox" value="4"> Married Life</label>
+                <label for=""><input type="checkbox" value="5"> Youth</label>
+                <label for=""><input type="checkbox" value="6"> Kids</label>
+            </div>
         </div>
-        <h3 class="section-header">Section Header</h3>
-        <div class="radio-question">
-            <label for=""><input type="radio" name="radio" value=""> Radio Option 1</label>
-            <label for=""><input type="radio" name="radio" value=""> Radio Option 2</label>
-        </div>
-        <h3 class="section-header">Section Header</h3>
-        <div class="checkbox-question">
-            <label for=""><input type="checkbox" value=""> Checkbox Option 1</label>
-            <label for=""><input type="checkbox" value=""> Checkbox Option 2</label>
-        </div>
-        <h3 class="section-header">Section Header</h3>
-        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        <h3 class="section-header">Questions and Prayer Requests</h3>
+        <textarea name="" id="textarea" cols="30" rows="10" placeholder="Feel free to type any questions and/or prayer requests"></textarea>
         <button id="submit">Submit</button>
     </form>
 </body>
